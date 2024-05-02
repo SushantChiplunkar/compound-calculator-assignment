@@ -24,6 +24,24 @@ void main() async {
   );
 }
 
+final principalAmountProvider = StateProvider<double>((ref) {
+  return 0.0;
+});
+
+final rateOfInterestProvider = StateProvider<int>((ref) {
+  return 1;
+});
+
+final timesCompoundedProvider = StateProvider<int>((ref) {
+  return 1;
+});
+
+final numberOfYearsProvider = StateProvider<int>((ref) {
+  return 1;
+});
+
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
